@@ -1,0 +1,12 @@
+Fun card game me and a group of my friends came up with in highschool
+
+You are given 3 pairs of cards, 1 visible and 1 not visible in each pair
+
+You would then use a game token and pick one of the pairs and we will then flip over the hidden card. 
+If the two cards shared any attribute, you would win a prize based off of that:
+<ul>
+    <li>same color, you would win $1 </li>
+    <li>same suit, you would win $5 </li>
+    <li>same number, you would win $10 </li>
+    <li>same number and color, you would win $20 </li>
+</ul>
