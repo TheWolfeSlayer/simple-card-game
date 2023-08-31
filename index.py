@@ -1,4 +1,5 @@
 import random
+import os
 
 class Card():
     def __init__(self, value, suit):
@@ -57,6 +58,7 @@ def test_cards(visible_card, hidden_card):
         print(f'You won nothing! You still have {new_user.money}')
 
 def start_game():
+    os.system('cls')
     new_user.money -=2
     temp_deck = base_deck
 
@@ -76,6 +78,7 @@ def start_game():
     
 def do_continue():  
     if new_user.money > 2:
+        
         user_continue = input(f'You have ${new_user.money}, do you want to continue for another $2?')
         if user_continue.lower() == 'Yes':
             new_user.money -=2
@@ -96,7 +99,7 @@ lets_play_a_game = True
 suits = ['Heart', 'Clubs', 'Diamonds', 'Spades']
 base_deck = [Card(value, suit) for value in range(1, 14) for suit in suits]
 get_name = input('Enter your name')
-new_user = User(get_name, 5000)
+new_user = User(get_name, 500)
 
 
 yes_or_no = input(f'You have ${new_user.money}, do you want to play a game for $2?')
